@@ -1,16 +1,16 @@
-#Crime Rate vs Educational Attainment vs Household Income
-#Study of the Relationship Among 
-#Crime Rate, Educational Attainment, and Household Income in the United States of America
+# Crime Rate vs Educational Attainment vs Household Income
+# Study of the Relationship Among 
+# Crime Rate, Educational Attainment, and Household Income in the United States of America
 
-##Introduction:
+## Introduction:
 In recent years, public safety became a rising global problem, and the problem is getting worse especially in the U.S. This study is trying to reveal the potential cause(s) of the booming crime rate in the U.S. and the possible way to lower it. This study is highly based on R language with Shiny.
 Initially, three questions (assumptions) were raised as the first step of this study and the guideline of the early data acquisition process. The three questions raised are:
 •	What is the relationship between Crime Rate, Educational Attainment, and Household Income?
 •	Is the relationship discovered in question one can always be applied (across states/counties)?
 •	Between Household Income and Educational Attainment, which one of them affects more on the Crime Rate?
 
-##Data Wrangling:
-###Data Acquisition
+## Data Wrangling:
+### Data Acquisition
  To study this issue and try to answer the questions raised above, below datasets were acquired:
 •	“Crime in the United States” by FBI, year 2012 - 2016, tabular data, 502 rows * 13 columns for each year. Contains spatial data of crimes reported by type of crimes in each state of the United States. (https://ucr.fbi.gov/crime-in-the-u.s/)
 •	“EDUCATIONAL ATTAINMENT, American Community Survey 1-Year Estimates” by United States Census Bureau, year 2012 – 2016, tabular data, 54 rows * 18 columns for the year 2012-2014, 54 rows * 33 columns for the year 2015 and 2016, contains spatial data for average educational attainment report by age group in each state of the United States. (https://factfinder.census.gov/)
@@ -32,7 +32,7 @@ Additionally, after performed some online about general data used to perform ana
 After the first data wrangling was completed, and further data checking was performed, the 20 datasets above were transformed to 3 lists, and stored into a RData file with an additional list containing the means of each dataset.
   
 
-##Data Exploration and Visualization
+## Data Exploration and Visualization
 To perform proper data exploration and visualization for this study, Shiny with ggplot2 and fiftystater (a mapping library that can product a better map output comparing to ggplot2) in the environment of RStudio was chosen.
 •	“navbarPage” was selected since there will be multiple plots been displayed.
 •	“sliderInput” was used to enable year selection.
@@ -49,7 +49,7 @@ Dynamic input from “selectInput”, “sliderInput”, and “radioButtons” 
 
 
 
-##Conclusion:
+## Conclusion:
 By studying the bubble chart of the treated “across the U.S.” data, it can be discovered that household income and educational attainment are in a positive relation, when the relationship between crime rate and household income or the relationship between crime rate and educational attainment are hard to be identified.
  
 A clearer relationship could be identified by looking at the line charts. The line charts of household income and educational attainment across are almost identical, even a minor fluctuation on the year of 2014 are the same.
