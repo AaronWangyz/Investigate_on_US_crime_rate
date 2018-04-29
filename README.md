@@ -1,6 +1,4 @@
-# Crime Rate vs Educational Attainment vs Household Income
-# Study of the Relationship Among 
-# Crime Rate, Educational Attainment, and Household Income in the United States of America
+# Study of the Relationship Among Crime Rate, Educational Attainment, and Household Income in the United States of America
 
 ## Introduction:
 In recent years, public safety became a rising global problem, and the problem is getting worse especially in the U.S. This study is trying to reveal the potential cause(s) of the booming crime rate in the U.S. and the possible way to lower it. This study is highly based on R language with Shiny.
